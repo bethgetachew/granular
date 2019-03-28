@@ -1,0 +1,171 @@
+  @import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+
+  body {
+    font-family: "lato", sans-serif;
+    line-height: 1.6;
+    font-size: 14px;
+    text-color: #333333;
+    text-align: center;
+  }
+
+  .scroll-effect {
+    /* Set the height of the elemnts to 100% of the viewport height */
+    height: 100vh;
+    /* stop the background from repeating */
+    background-repeat: no-repeat;
+    /* Stretch background to cover elements  */
+    background-size: cover;
+    /*show the center part of image  */
+    background-position: center;
+    /* Scroll content over background  */
+    background-attachment: fixed;
+    /* We want to position our h3's at the bottom of our sections so apply position:relative to make the position absolutel style work. */
+    position: relative;
+  }
+
+  header {
+    background-image: url(../images/header.jpg);
+  }
+
+  nav {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    /* To place logo in the middle  */
+    /* transform: translate(-50%, -50%)  */
+  }
+
+  .down-arrow {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  h1 {
+    margin-bottom: 20px
+  }
+
+  nav a {
+    padding: 15px
+  }
+
+  nav a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  nav a:hover {
+    color: #eed821;
+    text-decoration: underline;
+  }
+
+  .highlight {
+    background-color: #e3e8ea;
+    padding: 50px 0;
+  }
+
+  h2 {
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-bottom: 40px;
+  }
+
+  .feature {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 50px 0;
+  }
+
+  p {
+    margin-bottom: 60px;
+  }
+
+  #filter1 {
+    background-image: url(../images/one.jpg);
+  }
+
+  #filter2 {
+    background-image: url(../images/two.jpg);
+  }
+
+  #filter3 {
+    background-image: url(../images/three.jpg);
+  }
+
+  #filter4 {
+    background-image: url(../images/four.jpg);
+  }
+
+  #filter5 {
+    background-image: url(../images/five.jpg);
+  }
+
+  #filter6 {
+    background-image: url(../images/six.jpg);
+  }
+
+  h3 {
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 300;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+  }
+
+  /* Subscribe  */
+  .subscribe, footer {
+    background-color: #eed821;
+    padding: 50px 0;
+  }
+
+  /*This is styling up the email section text field  */
+  /*if there is multiple email fields use: input:[type="email"]{ } */
+  .email {
+    width: 60%;
+    border: solid 2px white;
+    padding: 8px;
+    border-radius: 5px 5px 5px 5px;
+    text-align: center;
+    outline: none;
+    transistion: border all 0.3s;
+  }
+
+  .email:focus {
+    border: 2px solid #333333;
+  }
+
+  .button {
+    width: 60%;
+    background-colour: transparent;
+    border: 2px solid #333333;
+    border-radius: 5px;
+    text-padding: 8px 0;
+    text-transform: uppercase;
+    transition: all 0.3s;
+  }
+
+  .button:hover {
+    border-color: white;
+    color: white;
+  }
+
+  footer {
+    font-size: 12px;
+    text-transform: uppercase
+  }
+
+  small {
+    color: white;
+  }
+
+  footer a {
+    text-decoration: none;
+    text-color: grey;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
