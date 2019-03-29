@@ -169,3 +169,21 @@
     padding-left: 10px;
     padding-right: 10px;
   }
+
+  /* Mobile styles  */
+  @media screen and (max-width 760px) {
+    background-attachment: scroll;
+  }
+
+  nav {
+    position: static;
+    padding-top: 50px;
+  }
+
+  .subscribe, .highlight, .feature {
+    padding: 20px;
+  }
+
+  .email, .button {
+    width: 100%;
+  }
