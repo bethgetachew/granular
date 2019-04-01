@@ -19,7 +19,7 @@
     background-position: center;
     /* Scroll content over background  */
     background-attachment: fixed;
-    /* We want to position our h3's at the bottom of our sections so apply position:relative to make the position absolutel style work. */
+    /* We want to position our h3's at the bottom of our sections so apply position:relative to make the position absolute style */
     position: relative;
   }
 
@@ -66,10 +66,10 @@
     padding: 50px 0;
   }
 
-  h2 {
+  h2, h4 {
     font-size: 26px;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 700;
     margin-bottom: 40px;
   }
 
@@ -139,12 +139,12 @@
     border: 2px solid #333333;
   }
 
-  .button {
+  .button, button {
     width: 60%;
     background-colour: transparent;
     border: 2px solid #333333;
     border-radius: 5px;
-    text-padding: 8px 0;
+    padding: 8px 0;
     text-transform: uppercase;
     transition: all 0.3s;
   }
@@ -170,20 +170,104 @@
     padding-right: 10px;
   }
 
+  /* About page styles  */
+  .about {
+    background-image: url(../images/three.jpg);
+  }
+
+  .gallery {
+    /* Flexbox allows us to align vertically and horizontally  */
+    /*  To use flexbox */
+    /*1. Apply display: flex  */
+    display: flex;
+    /*2. Set the flex direction */
+    flex-direction: row;
+    /*3.Align the items either horizontally using justify-content or vertically using align items  */
+    justify-content: center;
+    /*4. set wether you want the items to wrap onto different lines  */
+    flex-wrap: wrap;
+  }
+
+  .gallery-image {
+    height: 200px;
+    margin: 0 0 20px 20px;
+  }
+
+  /* Pricing Cards */
+  .pricing {
+    background-image: url(../images/header.jpg);
+    height: auto;
+    padding: 50px 0;
+    color: white;
+  }
+
+  /* Pricing cards */
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .card {
+    background: #f2f2f2;
+    border-radius: 5px;
+    margin: 12px;
+    padding-bottom: 50px;
+    /* This property sets the width of our flexbox */
+    flex-basis: 250px;
+  }
+
+  h4 {
+    background: #808080;
+    height: 80px;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  ul {
+    list-style: none;
+    color: #333333;
+    margin-bottom: 25px;
+  }
+
+  li {
+    height: 20px;
+    margin: 10px auto;
+  }
+
+  .card-big {
+    transform: scaleX(1.12);
+  }
+
+  .card-big button {
+    background: #eede00;
+  }
+
+  button:hover {
+    background: #333333;
+    color: white;
+  }
+
   /* Mobile styles  */
-  @media screen and (max-width 760px) {
-    background-attachment: scroll;
-  }
+  @media screen and (max-width: 760px) {
+    .scroll-effect {
+      background-attachment: scroll;
+    }
 
-  nav {
-    position: static;
-    padding-top: 50px;
-  }
+    nav {
+      position: static;
+      padding-top: 50px;
+    }
 
-  .subscribe, .highlight, .feature {
-    padding: 20px;
-  }
+    .subscribe, .highlight, .feature {
+      padding: 20px;
+    }
 
-  .email, .button {
-    width: 100%;
+    .email, .button {
+      width: 100%;
+    }
   }
